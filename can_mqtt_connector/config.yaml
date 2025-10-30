@@ -1,0 +1,15 @@
+name: CAN-MQTT Connector
+version: "1.0.0"
+slug: can_mqtt_connector
+description: Führt das Python-Skript und can-utils aus
+arch:
+  - aarch64
+  - amd64
+  - armv7
+options: {}
+image: "ghcr.io/home-assistant/alpine-base:latest"
+stage: running
+startup: before
+boot: auto
+map:
+  - config: rw
