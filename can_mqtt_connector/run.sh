@@ -9,6 +9,8 @@ apk add can-utils
 
 apk add python3
 
+pip3 install python-can
+
 # --- 2. Das Python-Skript ausführen ---
 # Kopiere oder verschiebe dein Python-Skript (z.B. mqtt_befueller.py) 
 # am besten in den /config Ordner, um es hier aufrufen zu können.
