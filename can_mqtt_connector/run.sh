@@ -7,6 +7,8 @@ echo "Installiere can-utils..."
 apk update
 apk add can-utils
 
+apk add python3
+
 # --- 2. Das Python-Skript ausführen ---
 # Kopiere oder verschiebe dein Python-Skript (z.B. mqtt_befueller.py) 
 # am besten in den /config Ordner, um es hier aufrufen zu können.
