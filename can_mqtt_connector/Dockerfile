@@ -1,5 +1,5 @@
 # Basisimage
-FROM ghcr.io/home-assistant/base:latest
+FROM ghcr.io/home-assistant/amd64-base:3.18
 
 # Installiere Python & can-utils
 RUN apk add --no-cache python3 py3-pip can-utils
@@ -7,12 +7,13 @@ RUN apk add --no-cache python3 py3-pip can-utils
 # Setze Arbeitsverzeichnis
 WORKDIR /usr/src/app
 
-# Kopiere Skript
+# Kopiere Skripte
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
 
-# Falls du ein Python-Skript hast, kopiere es auch:
+# (Optional) Dein Python-Skript
 COPY your_script.py /usr/src/app/your_script.py
 
-# Starte dein Script
+# Starte das Script
 CMD ["/run.sh"]
+
