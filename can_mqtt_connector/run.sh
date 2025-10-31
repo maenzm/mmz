@@ -10,6 +10,7 @@ apk add can-utils
 apk add python3
 
 pip3 install python-can
+pip install paho-mqtt
 
 # --- 2. Das Python-Skript ausführen ---
 # Kopiere oder verschiebe dein Python-Skript (z.B. mqtt_befueller.py) 
