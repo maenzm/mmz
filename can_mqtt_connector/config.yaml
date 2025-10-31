@@ -1,5 +1,5 @@
 name: "CAN-MQTT Connector"
-version: "1.0.7"
+version: "1.0.8"
 slug: "can_mqtt_connector"
 description: "Führt das Python-Skript und can-utils aus"
 arch:
