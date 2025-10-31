@@ -11,9 +11,7 @@ apk add python3
 
 pip3 install python-can
 pip install paho-mqtt
-
-slcand -o -c -s6 /dev/serial/by-id/usb-Openlight_Labs_CANable2_b158aa7_github.com_normaldotcom_canable2.git_209035805741-if00 can0
-ifconfig can0 up 
+pip3 install python-can pyserial
 
 # --- 2. Das Python-Skript ausführen ---
 # Kopiere oder verschiebe dein Python-Skript (z.B. mqtt_befueller.py) 
