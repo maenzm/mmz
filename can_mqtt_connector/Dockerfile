@@ -1,12 +1,18 @@
-ARG BUILD_FROM=ghcr.io/home-assistant/amd64-base:latest
-FROM ${BUILD_FROM}
+# Basisimage
+FROM ghcr.io/home-assistant/base:latest
 
-# Labels (optional, aber hilfreich)
-LABEL maintainer="deinname@example.com"
+# Installiere Python & can-utils
+RUN apk add --no-cache python3 py3-pip can-utils
 
-# Kopiere dein Skript ins Image
+# Setze Arbeitsverzeichnis
+WORKDIR /usr/src/app
+
+# Kopiere Skript
 COPY run.sh /run.sh
-RUN chmod a+x /run.sh
+RUN chmod +x /run.sh
 
-# Starte dein Skript beim Container-Start
-CMD [ "/run.sh" ]
+# Falls du ein Python-Skript hast, kopiere es auch:
+COPY your_script.py /usr/src/app/your_script.py
+
+# Starte dein Script
+CMD ["/run.sh"]
