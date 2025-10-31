@@ -11,9 +11,6 @@ WORKDIR /usr/src/app
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
 
-# (Optional) Dein Python-Skript
-COPY your_script.py /usr/src/app/your_script.py
-
 # Starte das Script
 CMD ["/run.sh"]
 
