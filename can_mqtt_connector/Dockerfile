@@ -1,4 +1,4 @@
-# Basisimage
+# Nutze das offizielle Base-Image
 FROM ghcr.io/home-assistant/amd64-base:3.18
 
 # Installiere Python & can-utils
@@ -11,6 +11,6 @@ WORKDIR /usr/src/app
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
 
-# Starte das Script
-CMD ["/run.sh"]
 
+# Startkommando
+CMD ["/run.sh"]
