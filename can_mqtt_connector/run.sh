@@ -20,7 +20,7 @@ echo "Starte MQTT Skript..."
 
 # Passe den Pfad zu deinem Skript an. Der /config-Ordner von HA wird im 
 # Add-on oft gemountet. Wenn du es dort abgelegt hast:
-python3 /config/test.py 
+python3 /config/mqtt.py 
 
 # Wichtig: Das Add-on muss laufen, damit der Container nicht stoppt. 
 # Füge eine Endlosschleife hinzu, solange dein Python-Skript im Hintergrund läuft.
