@@ -17,6 +17,7 @@ pip3 install python-can pyserial
 # Kopiere oder verschiebe dein Python-Skript (z.B. mqtt_befueller.py) 
 # am besten in den /config Ordner, um es hier aufrufen zu können.
 echo "Starte MQTT Skript..."
+ls -l /dev/serial/by-id/
 
 # Passe den Pfad zu deinem Skript an. Der /config-Ordner von HA wird im 
 # Add-on oft gemountet. Wenn du es dort abgelegt hast:
