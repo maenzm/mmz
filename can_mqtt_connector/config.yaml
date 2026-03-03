@@ -1,5 +1,5 @@
 name: "CAN-MQTT Connector"
-version: "1.0.2"
+version: "1.0.3"
 slug: "can_mqtt_connector"
 description: "Führt das Python-Skript und can-utils aus"
 arch:
@@ -14,6 +14,5 @@ schema: {}
 map:
   - config:rw
 devices:
-  - /dev/serial/by-id/usb-Openlight_Labs_CANable2_b158aa7_github.com_normaldotcom_canable2.git_209035805741-if00:/dev/ttyCAN0
-
+  - /dev/serial/by-id/usb-Openlight_Labs_CANable2_b158aa7_github.com_normaldotcom_canable2.git_209035805741-if00
 host_network: true
