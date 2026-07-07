@@ -5,9 +5,8 @@
 # bei JEDEM Start des Add-ons ausgeführt.
 echo "Installiere can-utils..."
 apk update
-apk add can-utils
 
-apk add python3
+apk add can-utils python3 tzdata
 
 pip3 install python-can
 pip install paho-mqtt
