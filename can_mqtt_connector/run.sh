@@ -8,6 +8,9 @@ apk update
 
 apk add can-utils python3 tzdata
 
+# Systemzeit des Containers auf deutsche Zeit umstellen
+ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
+
 pip3 install python-can
 pip install paho-mqtt
 pip3 install python-can pyserial
