@@ -1,5 +1,5 @@
 name: "CAN-MQTT Connector"
-version: "1.0.15"
+version: "1.0.16"
 slug: "can_mqtt_connector"
 description: "Führt das Python-Skript und can-utils aus"
 arch:
@@ -9,6 +9,9 @@ arch:
 startup: "application"
 boot: "auto"
 init: false
+# Hier wird die Umgebungsvariable für den Container definiert:
+environment:
+  TZ: "Europe/Berlin"
 options: {}
 schema: {}
 map:
